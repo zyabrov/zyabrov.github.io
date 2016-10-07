@@ -1,0 +1,277 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-color: #fff;
+	margin:0;
+	min-height:100%;
+}
+a{
+	text-decoration: none;
+}
+header {
+	    background-image: url(../img/header-background.jpg) !important;
+    background-color: transparent !important;
+}
+.logo {
+	height:100%;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 72px);
+	}
+header .buttons {
+	position:absolute;
+	top:0;
+	right:0;
+	max-width: 89px;
+}
+header .buttons a {
+	display: inline-block;
+	width: 39px;
+	height:100%;
+	color: rgb(55, 50, 47);
+	font-size: 26px;
+	text-align:center;
+}
+/*---PopUP---*/
+.b-popup{
+	width: 100%;
+	min-height: 100%;
+	background-color: rgba(0,0,0,0.5);
+	position:fixed;
+    top:0px;
+	z-index: 3;
+}
+.b-popup .b-popup-content{
+margin: 80px auto 0px auto;
+    width: 300px;
+    height: 400px;
+    padding: 20px 0;
+    background-color: white;
+    border: 3px solid #CFCF22;
+    box-shadow: 0px 0px 5px #000;
+    position: relative;
+}
+.popup-close-icon{
+	position: absolute;
+	cursor: pointer;
+	right:10px;
+	top:10px;
+}
+.chose-auto{
+    font-size: 16px;
+    color: #37322F;
+    font-family: HelveticaNeueCyr-Bold;
+    text-align: center;
+}
+/*---ENDPopUP---*/
+/*Hidden PopUP*/
+#popup1{
+display:none;
+}
+/*---POPUP AUTOS---*/
+.auto-block a {
+	padding-left:20px !important;
+}
+.auto{
+	display: block;
+	color:#37322F;
+	font-size: 24px;
+}
+#autoChose{
+cursor: pointer;
+}
+/*---ENDPopUPAUTOS---*/
+.buttons a i {
+	line-height:56px;
+}
+.mdl-layout__header-row {
+	position:relative;
+}
+.container {
+	    position: absolute;
+    top: 56px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 56px);
+}
+.cbp-mc-form {
+	position: relative;
+	    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.mdl-layout__header .mdl-layout__drawer-button {
+    color: rgb(55, 50, 47) !important;
+}
+
+.cbp-mc-form:before, 
+.cbp-mc-form:after { 
+	content: " "; display: table; 
+}
+
+.cbp-mc-form:after { 
+	clear: both; 
+}
+
+.cbp-mc-column {
+	width: 33%;
+	padding: 10px 30px;
+	margin: 0 auto;
+	height :100%;
+	position:relative;
+}
+.input_with_icon i{
+	    float: left;
+    color: #37322F;
+    padding-top: 6px;
+    font-size: 36px;
+    line-height: 66px;
+    padding: 0;
+	}
+.input_with_icon, a.auto {
+	border-bottom: 1px solid #E0DB21;
+	overflow:auto;
+	padding: 0 10px;
+}
+.fa-mobile{
+	font-size: 40px;
+}
+.fa-map-marker{
+	font-size: 40px;
+}
+.fa-clock-o{
+	font-size: 36px;
+}
+.fa-car{
+	font-size: 28px;
+}
+.fa-comment{
+	font-size: 30px;
+}
+.fa-hand-pointer-o{
+	font-size: 20px;
+	margin-right: 10px;
+}	
+.input-for-padding{
+	padding-bottom: 50px;
+}
+.zakaz {
+	position:fixed;
+	bottom:0;
+	/*width:calc(100% - 60px);*/
+	width: 30%;
+
+}
+.cbp-mc-form input,
+.cbp-mc-form textarea,
+.cbp-mc-form select,
+.cbp-mc-form textarea, a.auto {
+	font-family: HelveticaNeueCyr-Bold;
+    line-height: 1.5;
+    font-size: 1.0em;
+    padding: 22px 10px;
+    color: #222220;
+    display: block;
+    width: calc(100% - 50px);
+    background: transparent;
+    text-transform: uppercase;
+}
+.cbp-mc-form textarea{
+	resize: none;
+}
+.cbp-mc-form input,
+.cbp-mc-form textarea {
+	border: none;
+	
+}
+.cbp-mc-form input:focus,
+.cbp-mc-form textarea:focus,
+.cbp-mc-form label:active + input,
+.cbp-mc-form label:active + textarea {
+	outline: none;
+	border:none;
+	
+}
+
+.cbp-mc-form select:focus {
+	outline: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #B7B7B7;
+    font-style: normal;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #B7B7B7;
+    font-style: normal;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #B7B7B7;
+    font-style: normal;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #B7B7B7;
+    font-style: normal;
+}
+
+.cbp-mc-submit-wrap {
+	text-align: center;
+	padding-top: 40px;
+	margin-top: 10px;
+	clear: both;
+	background: #cfcf22;
+	border: none;
+	color: #232422;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding: 15px 30px;
+	font-size: 1.1em;
+	border-radius: 2px;
+	letter-spacing: 1px;
+}
+
+.cbp-mc-form input.cbp-mc-submit {
+
+}
+
+.cbp-mc-form input.cbp-mc-submit:hover {
+	background: #1478b1;
+}
+
+@font-face {
+    font-family: HelveticaNeueCyr-Bold; 
+    src: url(fonts/HelveticaNeueCyr-Bold.otf); 
+   }
+@font-face {
+    font-family: HelveticaNeueCyr-Black;
+    src: url(fonts/HelveticaNeueCyr-Black.otf); 
+   }t-face {
+    font-family: HelveticaNeueCyr-Medium; 
+    src: url(fonts/HelveticaNeueCyr-Medium.otf); 
+   }
+
+@media screen and (max-width: 70em) {
+	.cbp-mc-column {
+		width: 50%;
+	}
+	.cbp-mc-column:nth-child(3) {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 48em) {
+	.cbp-mc-column {
+		width: 100%;
+		padding: 0;
+	}
+	.zakaz {width:100%;}
+}
+@media screen and (min-width:1025px) {
+	.buttons a i {line-height:64px;};
+}

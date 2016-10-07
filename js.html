@@ -1,0 +1,22 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script>
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "http://91.217.67.54:7200/api/weborders",
+  "method": "POST",
+  "headers": {
+    "accept": "application/json",
+    "content-type": "application/json; charset=utf-8",
+    "x-wo-api-app-id": "45",
+    "content-length": "0",
+    "authorization": "Basic YWRtaW46YzdhZDQ0Y2JhZDc2MmE1ZGEwYTQ1MmY5ZTg1NGZkYzFlMGU3YTUyYTM4MDE1ZjIzZjNlYWIxZDgwYjkzMWRkNDcyNjM0ZGZhYzcxY2QzNGViYzM1ZDE2YWI3ZmI4YTkwYzgxZjk3NTExM2Q2Yzc1MzhkYzY5ZGQ4ZGU5MDc3ZWM==",
+    "cache-control": "no-cache",
+    "postman-token": "73a1ab69-0cf8-b417-3516-0b894b3f465e"
+  }
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+</script>

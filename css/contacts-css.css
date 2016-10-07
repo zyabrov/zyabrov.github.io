@@ -1,0 +1,32 @@
+*{
+margin: 0;
+padding: 0;
+}
+.sample_text{
+color:#050505;
+font-size: 20px;
+}
+header{
+height: 40px;
+color:#050505;
+overflow: hidden;
+}
+header a {
+color:#050505;
+}
+.content_header{
+margin-top: 8px;
+}
+.icon_back{
+float: left;
+}
+.about_text{
+display: block;
+width: 80px;
+margin: 0 auto;
+text-align: center;
+}
+.map{
+border-top: 3px solid #D4E157;
+border-bottom: 3px solid #D4E157;
+}
